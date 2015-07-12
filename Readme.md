@@ -7,8 +7,11 @@ Go to the [http://kafka.apache.org/documentation.html](Apache Kafka homepage) an
 ## 2. Start any number of consumers
 
 ./consumer --brokers=localhost:9092 --topic=multiply --op=*
+
 ./consumer --brokers=localhost:9092 --topic=multiply --op=-
+
 ./consumer --brokers=localhost:9092 --topic=multiply --op=/
+
 ./consumer --brokers=localhost:9092 --topic=multiply --op=+
 
 ## 3. Start a producer
@@ -18,4 +21,5 @@ Go to the [http://kafka.apache.org/documentation.html](Apache Kafka homepage) an
 ## 4. Start sending messages in the producer
 
 x y: 3 4
+
 => 3 * 4 = 12
